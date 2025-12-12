@@ -1,4 +1,24 @@
-h1{
+body{
+    background-color: rgba(3, 17, 25, 1);
+    margin: 0px;
+    padding: 0px;
+}
+.hero-section {
+    height: 800px;
+    background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255,0.1) 0px,
+    rgba(71, 69, 69, 0.5) 0.1px,
+    transparent 1px,
+    transparent 10px
+  );
+  padding-left: 50px;
+}
+h1 {
+    color: white;
+    padding-top: 150px;
+    font-size: 5rem;
+    font-weight: 800px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    /* text-align: center; */
 }
