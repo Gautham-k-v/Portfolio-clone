@@ -1,24 +1,502 @@
-body{
-    background-color: rgba(3, 17, 25, 1);
-    margin: 0px;
-    padding: 0px;
+/* univeral styles for body */
+body {
+  background-color: rgba(3, 17, 25, 1);
+  color: rgba(224, 233, 242, 1);
 }
+/* custom paragrapgh styles */
+.custom-p {
+  color: rgba(255, 255, 255, 0.633);
+}
+/* linear gradient background for hero section */
 .hero-section {
-    height: 800px;
-    background-image: repeating-linear-gradient(
+  height: auto;
+  background-image: repeating-linear-gradient(
     45deg,
-    rgba(255, 255, 255,0.1) 0px,
+    rgba(255, 255, 255, 0.1) 0px,
     rgba(71, 69, 69, 0.5) 0.1px,
     transparent 1px,
     transparent 10px
   );
-  padding-left: 50px;
 }
-h1 {
-    color: white;
-    padding-top: 150px;
-    font-size: 5rem;
-    font-weight: 800px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* text-align: center; */
+/* hero section explore button styles */
+.creative {
+  width: 6rem;
+}
+.custom-button:hover {
+  background-color: rgba(213, 153, 19, 1);
+}
+/* animation for the hero img */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.hero-image {
+  animation: floatImage ease-in-out infinite alternate 9s;
+}
+/* stats card styles */
+.stats-card {
+  height: 146px;
+  width: 314px;
+  background-color: rgba(27, 38, 44, 1);
+  margin-top: 1.875rem;
+  border-radius: 15px;
+  border: 2px solid rgb(52, 56, 58);
+}
+.statscard-head {
+  padding-left: 0.938rem;
+  padding-top: 1.563rem;
+}
+.stats-p {
+  padding-left: 0.938rem;
+}
+.right-up-arrow {
+  color: white;
+  background-color: rgba(213, 153, 19, 1);
+  margin: 0.313rem;
+  padding: 0.25rem;
+}
+.five {
+  font-weight: bold;
+  font-size: 3rem;
+}
+/* About Us section styles */
+.line-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 3.125rem;
+  margin-bottom: 0rem;
+}
+.line-heading span {
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: rgba(213, 153, 19, 1);
+}
+.fsize-about {
+  font-size: 1.7rem;
+  margin-top: 0rem;
+}
+/* inside image styles */
+.inside-image {
+  background-color: rgba(213, 153, 19, 1);
+  width: 50vw;
+  height: 13vh;
+  position: relative;
+  top: -132px;
+  left: 170px;
+}
+.insideimage {
+  text-align: center;
+  margin-top: 1rem;
+}
+.underimg {
+  position: relative;
+  top: -60px;
+}
+/* feature items */
+.feature-item {
+  background-color: rgba(27, 38, 44, 1);
+  width: 335px;
+  height: 215px;
+}
+.feature-item:hover {
+  transform: translateY(-8px);
+}
+.feature-item-border {
+  background-color: rgba(213, 153, 19, 1);
+  color: rgba(27, 38, 44, 1);
+}
+.feature-text {
+  font-size: 0.9rem;
+}
+.feature-item-bulb {
+  color: rgba(213, 153, 19, 1);
+}
+.feature {
+  margin-top: 25px;
+  background-color: rgba(27, 38, 44, 1);
+  width: 335px;
+  height: 190px;
+}
+.feature:hover {
+  transform: translateY(-8px);
+}
+.feature-button {
+  color: white;
+  background-color: rgba(213, 153, 19, 1);
+}
+.feature-button:hover {
+  background-color: rgb(170, 122, 19);
+}
+/* review section with a button arrow sliders */
+.review {
+  margin-top: 3.75rem;
+}
+.review-font {
+  font-size: 0.9rem;
+}
+/* slider styles */
+.bg-for-each-slide {
+  background-color: rgba(27, 38, 44, 1);
+  width: 335px;
+  height: auto;
+}
+.client-image {
+  width: 70px;
+  height: 70px;
+}
+/* services page styles */
+.line-heading-service {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5.5rem;
+  margin-bottom: 0rem;
+}
+.line-head span {
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: rgba(213, 153, 19, 1);
+}
+.service-button {
+  color: white;
+  border-style: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 30px;
+  background-color: rgba(213, 153, 19, 1);
+}
+.service-button:hover {
+  background-color: rgb(169, 118, 6);
+}
+/* card desgins of services */
+.creative-branding {
+  border-color: rgba(27, 38, 44, 1);
+  border-style: solid;
+  width: 350px;
+  height: 450px;
+}
+.painting {
+  color: rgb(169, 118, 6);
+  background: rgba(232, 164, 16, 0.143);
+}
+/* steps and how we work session styles  */
+.vertical-line {
+  border-left: 3px solid rgba(169, 117, 6, 0.338);
+  height: 300px;
+  position: relative;
+  left: 12px;
+}
+.cards-steps {
+  background-color: rgba(27, 38, 44, 1);
+  margin-left: 3rem;
+  height: 280px;
+  width: 270px;
+}
+.color-p-steps {
+  color: rgb(176, 172, 172);
+}
+.adjust-position {
+  background: rgba(27, 44, 50, 0.957);
+  border-color: rgba(232, 164, 16, 0.143);
+  border-style: solid;
+  position: absolute;
+  left: -23px;
+  top: 115px;
+}
+/* percentage before testimonials styles */
+.percentage {
+  width: 300px;
+  height: auto;
+  background-color: rgb(2, 18, 28);
+}
+.dont {
+  background: rgba(169, 117, 6, 0.338);
+  font-size: 0.8rem;
+}
+.premium {
+  background-color: rgba(27, 38, 44, 1);
+}
+/* image with floating image over-ride style */
+.floating-image {
+  width: 270px;
+  height: 90px;
+  background: rgb(27, 44, 50);
+  position: relative;
+  top: -40px;
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.floating-image {
+  animation: floatImage ease-in-out infinite alternate 4s;
+}
+/* Testimonials style  */
+.testimonials {
+  background: rgb(17, 28, 31);
+  height: 1000px;
+}
+.fsize-testimonials {
+  font-size: 2.5rem;
+  margin-top: 0rem;
+}
+/* portfolio styles  */
+.fsize-portfolio {
+  font-size: 1.7rem;
+  margin-top: 0rem;
+}
+.portfolio-btn {
+  background: rgb(25, 43, 48);
+}
+.image-testi:hover {
+  background-color: rgb(169, 118, 6);
+}
+/* our team styles  */
+.team {
+  background: rgb(27, 46, 51);
+  height: 3960px;
+}
+.fsize-team {
+  font-size: 1.8rem;
+  margin-top: 0rem;
+}
+/* profile cards  */
+.profile {
+  width: 350px;
+  height: 600px;
+  background: rgb(25, 49, 56);
+  border-color: rgb(86, 84, 84);
+  border-style: solid;
+  border-width: 1px;
+}
+.person-details {
+  color: rgb(188, 184, 184);
+}
+.border-icon {
+  border-color: rgb(101, 98, 98);
+  border-style: solid;
+  color: white;
+  border-width: 1px;
+}
+/* pricing details  */
+.pricing {
+  width: 350px;
+  height: 620px;
+  background: rgb(18, 26, 28);
+}
+.price-bg {
+  background-color: rgba(169, 117, 6, 0.244);
+  border-radius: 30px;
+}
+.pricing-recomnded {
+  width: 350px;
+  height: 620px;
+  background: rgb(18, 26, 28);
+  border: 1px solid rgb(255, 179, 0);
+}
+.merits-price {
+  color: rgb(151, 149, 149);
+}
+.choose-plan {
+  background: rgba(91, 88, 88, 0.13);
+  width: 310px;
+  color: rgb(170, 166, 166);
+}
+.choose-plan-recomnded {
+  background: rgba(91, 88, 88, 0.13);
+  width: 310px;
+  color: white;
+  background: #c78e09;
+}
+.choose-plan:hover {
+  background: rgb(103, 100, 100);
+}
+/* FAQ section styles */
+.faq-style {
+  margin-top: 6rem;
+}
+/* Remove default borders */
+.accordion-item {
+  border: none;
+  background: #162527;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+/* Accordion button (question) */
+.accordion-button {
+  background: #162527;
+  font-weight: 500;
+  padding: 20px;
+  color: whitesmoke;
+  box-shadow: none;
+}
+
+/* Hover effect */
+.accordion-button:hover {
+  color: #c78e09;
+}
+
+/* Active (opened) state */
+.accordion-button:not(.collapsed) {
+  background: #162527;
+
+  color: whitesmoke;
+  box-shadow: none;
+}
+
+/* Remove default focus outline */
+.accordion-button:focus {
+  box-shadow: none;
+  color: #c78e09;
+}
+
+/* Accordion body */
+.accordion-body {
+  background: #162527;
+  padding: 20px;
+  color: rgba(245, 245, 245, 0.805);
+  line-height: 1.7;
+}
+
+/* Remove Bootstrap flush border line */
+.accordion-flush .accordion-item {
+  border-bottom: none;
+}
+/* arrow  */
+.accordion-button::after {
+  filter: invert(1);
+}
+
+/* Arrow when accordion is open */
+.accordion-button:not(.collapsed)::after {
+  filter: invert(78%) sepia(90%) saturate(600%) hue-rotate(5deg);
+}
+/* contact card  */
+.contact-card {
+  width: 347px;
+  height: 155px;
+  background: #162527;
+}
+.address-con {
+  margin-left: 5.5rem;
+  font-size: 1.2rem;
+}
+.contact-address {
+  color: rgb(176, 173, 173);
+  margin-left: 5.5rem;
+}
+.painting-contact {
+  color: rgb(207, 145, 11);
+  background: rgba(232, 164, 16, 0.143);
+  position: relative;
+  top: 45px;
+  left: 25px;
+}
+/* get in touch section styles  */
+.form-style {
+  width: 350px;
+  height: 600px;
+  background-color: rgb(30, 39, 45);
+  position: relative;
+  top: -100px;
+}
+.form-control {
+  background-color: rgb(30, 39, 45);
+  color: #ffffff;
+  border: 1px solid #4b5a63;
+}
+
+.form-control::placeholder {
+  color: #b0bec5;
+}
+/* Focus */
+.form-control:focus {
+  background-color: rgb(30 39, 45);
+  color: #ffffff;
+  border-color: #ffc107;
+  box-shadow: none;
+}
+.line-span {
+  display: inline-block;
+  position: relative;
+  left: 110px;
+  bottom: 15px;
+  width: 70px;
+  height: 3px;
+  background-color: rgba(213, 153, 19, 1);
+}
+.button-send {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background-color: rgb(227, 161, 20);
+}
+.button-send:hover {
+  background-color: rgb(201, 143, 18);
+}
+/* last section styles  */
+.last-section {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.last-paragraph {
+  font-size: 0.9rem;
+  color: rgba(245, 245, 245, 0.805);
+  padding-top: 1rem;
+}
+.icon-style-lst{
+  color: #969899;
+  border-color: #4b5a63;
+  border-style: solid;
+  border-width: 1px;
+  padding: .7rem;
+}
+.icon-style-lst:hover{
+color: rgb(233, 165, 21);
+border:1px solid rgb(233, 165, 21);
+}
+.service-align{
+  font-size: .9rem;
+}
+.service{
+  color: #969899;
+text-decoration: none;
+margin-top: .5rem;
+}
+.service:hover{
+  color: rgb(233, 165, 21);
+}
+.footer-p{
+  font-size: .9rem;
+    color: #d6d8da;
+}
+.copy-right{
+  width: 100%;
+  height: 90px;
+    background-color: rgb(30, 39, 45);
+    font-size: 0.8rem;
+}
+.last-yllw{
+    color: rgb(233, 165, 21);
+
 }
