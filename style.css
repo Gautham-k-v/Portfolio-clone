@@ -43,7 +43,7 @@ body {
 /* stats card styles */
 .stats-card {
   height: 146px;
-  width: 314px;
+  width: 80%;
   background-color: rgba(27, 38, 44, 1);
   margin-top: 1.875rem;
   border-radius: 15px;
@@ -87,11 +87,11 @@ body {
 /* inside image styles */
 .inside-image {
   background-color: rgba(213, 153, 19, 1);
-  width: 50vw;
-  height: 13vh;
+  width: 171px;
+  height: 100px;
   position: relative;
-  top: -132px;
-  left: 170px;
+  top: -130px;
+  left: 190px;
 }
 .insideimage {
   text-align: center;
@@ -120,15 +120,7 @@ body {
 .feature-item-bulb {
   color: rgba(213, 153, 19, 1);
 }
-.feature {
-  margin-top: 25px;
-  background-color: rgba(27, 38, 44, 1);
-  width: 335px;
-  height: 190px;
-}
-.feature:hover {
-  transform: translateY(-8px);
-}
+
 .feature-button {
   color: white;
   background-color: rgba(213, 153, 19, 1);
@@ -146,7 +138,7 @@ body {
 /* slider styles */
 .bg-for-each-slide {
   background-color: rgba(27, 38, 44, 1);
-  width: 335px;
+  width: 100%;
   height: auto;
 }
 .client-image {
@@ -199,8 +191,8 @@ body {
 .cards-steps {
   background-color: rgba(27, 38, 44, 1);
   margin-left: 3rem;
-  height: 280px;
-  width: 270px;
+  height: auto;
+  width: auto;
 }
 .color-p-steps {
   color: rgb(176, 172, 172);
@@ -215,9 +207,9 @@ body {
 }
 /* percentage before testimonials styles */
 .percentage {
-  width: 300px;
+  width: auto;
   height: auto;
-  background-color: rgb(2, 18, 28);
+  background-color: rgb(2, 19, 29);
 }
 .dont {
   background: rgba(169, 117, 6, 0.338);
@@ -228,7 +220,7 @@ body {
 }
 /* image with floating image over-ride style */
 .floating-image {
-  width: 270px;
+  width: 90%;
   height: 90px;
   background: rgb(27, 44, 50);
   position: relative;
@@ -251,7 +243,7 @@ body {
 /* Testimonials style  */
 .testimonials {
   background: rgb(17, 28, 31);
-  height: 1000px;
+  height: auto;
 }
 .fsize-testimonials {
   font-size: 2.5rem;
@@ -271,7 +263,7 @@ body {
 /* our team styles  */
 .team {
   background: rgb(27, 46, 51);
-  height: 3960px;
+  height: auto;
 }
 .fsize-team {
   font-size: 1.8rem;
@@ -279,12 +271,45 @@ body {
 }
 /* profile cards  */
 .profile {
-  width: 350px;
-  height: 600px;
-  background: rgb(25, 49, 56);
+  background: rgb(27, 46, 51);
   border-color: rgb(86, 84, 84);
   border-style: solid;
   border-width: 1px;
+}
+/* MOBILE */
+@media (max-width: 767.98px) {
+  .profile-img-wrapper {
+    width: 373px;
+    height: 350px;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+
+/* TABLET & UP */
+@media (min-width: 768px) {
+  .profile {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .profile-img-wrapper {
+    width: 160px;
+    height: auto;
+    flex-shrink: 0;
+    padding: 1rem;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 .person-details {
   color: rgb(188, 184, 184);
@@ -298,8 +323,8 @@ body {
 /* pricing details  */
 .pricing {
   width: 350px;
-  height: 620px;
-  background: rgb(18, 26, 28);
+  height: 655px;
+  background: rgb(9, 32, 37);
 }
 .price-bg {
   background-color: rgba(169, 117, 6, 0.244);
@@ -307,8 +332,8 @@ body {
 }
 .pricing-recomnded {
   width: 350px;
-  height: 620px;
-  background: rgb(18, 26, 28);
+  height: 655px;
+  background: rgb(9, 32, 37);
   border: 1px solid rgb(255, 179, 0);
 }
 .merits-price {
@@ -392,7 +417,7 @@ body {
 }
 /* contact card  */
 .contact-card {
-  width: 347px;
+  width: 100%;
   height: 155px;
   background: #162527;
 }
@@ -419,6 +444,12 @@ body {
   position: relative;
   top: -100px;
 }
+/* TABLET & UP */
+@media (min-width: 768px){
+  .form-style{
+    width: 98%;
+  }
+}
 .form-control {
   background-color: rgb(30, 39, 45);
   color: #ffffff;
@@ -444,6 +475,18 @@ body {
   height: 3px;
   background-color: rgba(213, 153, 19, 1);
 }
+/* tablet or up  */
+@media (min-width:760px){
+  .line-span {
+  display: inline-block;
+  position: relative;
+  left: 300px;
+  bottom: 15px;
+  width: 70px;
+  height: 3px;
+  background-color: rgba(213, 153, 19, 1);
+}
+}
 .button-send {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -464,39 +507,38 @@ body {
   color: rgba(245, 245, 245, 0.805);
   padding-top: 1rem;
 }
-.icon-style-lst{
+.icon-style-lst {
   color: #969899;
   border-color: #4b5a63;
   border-style: solid;
   border-width: 1px;
-  padding: .7rem;
+  padding: 0.7rem;
 }
-.icon-style-lst:hover{
-color: rgb(233, 165, 21);
-border:1px solid rgb(233, 165, 21);
+.icon-style-lst:hover {
+  color: rgb(233, 165, 21);
+  border: 1px solid rgb(233, 165, 21);
 }
-.service-align{
-  font-size: .9rem;
+.service-align {
+  font-size: 0.9rem;
 }
-.service{
+.service {
   color: #969899;
-text-decoration: none;
-margin-top: .5rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
 }
-.service:hover{
+.service:hover {
   color: rgb(233, 165, 21);
 }
-.footer-p{
-  font-size: .9rem;
-    color: #d6d8da;
+.footer-p {
+  font-size: 0.9rem;
+  color: #d6d8da;
 }
-.copy-right{
+.copy-right {
   width: 100%;
   height: 90px;
-    background-color: rgb(30, 39, 45);
-    font-size: 0.8rem;
+  background-color: rgb(30, 39, 45);
+  font-size: 0.8rem;
 }
-.last-yllw{
-    color: rgb(233, 165, 21);
-
+.last-yllw {
+  color: rgb(233, 165, 21);
 }
