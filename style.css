@@ -150,10 +150,6 @@ flex: 1 1 200px;
   width: 100%;
   height: auto;
 }
-.client-image {
-  width: 70px;
-  height: 70px;
-}
 /* services page styles */
 .line-heading-service {
   display: flex;
@@ -215,6 +211,7 @@ flex: 1 1 200px;
   top: 115px;
 }
 /* percentage before testimonials styles */
+
 .percentage {
   width: auto;
   height: auto;
@@ -232,8 +229,7 @@ flex: 1 1 200px;
   width: 90%;
   height: 90px;
   background: rgb(27, 44, 50);
-  position: relative;
-  top: -40px;
+ 
 }
 @keyframes floatImage {
   0% {
@@ -425,10 +421,19 @@ flex: 1 1 200px;
   filter: invert(78%) sepia(90%) saturate(600%) hue-rotate(5deg);
 }
 /* contact card  */
-.contact-card {
-  width: 100%;
-  height: 155px;
-  background: #162527;
+@media(min-width:375px){
+  .contact-card {
+    width: 100%;
+    height: 155px;
+    background: #162527;
+  }
+  @media(min-width:1024px){
+    .contact-card {
+      width: 320px;
+      height: 155px;
+      background: #162527;
+    }
+  }
 }
 .address-con {
   margin-left: 5.5rem;
