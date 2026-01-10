@@ -24,7 +24,7 @@
     <section class="hero-section">
       <!-- navigaiton bar -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark rounded-5 my-2 p-2 navbar-custom fixed-top"
+        class="navbar navbar-expand-lg navbar-dark bg-dark rounded-5 my-2 p-2 fixed-top"
       >
         <div class="container">
           <a class="navbar-brand" href="#">Strategy</a>
@@ -94,33 +94,42 @@
         </div>
       </nav>
       <!-- first section paragraphs and headings -->
-      <div class="container">
-        <h5 class="mx-auto py-3 fs-2 fw-light mt-5 mb-1">Our Agency</h5>
-        <h1 class="display-1 text-wrap fw-bold mt-1 creative">
-          CREATIVE DESIGN
-        </h1>
-        <hr />
-        <p class="custom-p lh-lg fw-normal p-2">
-          Discover innovative strategies for impactful visual communication. We
-          transform ideas into compelling realities, ensuring your brand stands
-          out in a crowded marketplace. Our dedicated team leverages
-          cutting-edge techniques to deliver exceptional results that resonate
-          with your audience.
-        </p>
-        <button
-          type="button"
-          class="btn btn-outline-secondary rounded-4 btn-lg custom-button fw-semibold"
-        >
-          EXPLORE SERVICES
-          <i class="bi bi-arrow-right arrow-right arrow-side"></i>
-        </button>
+      <div class="container mt-5">
+        <div class="row align-items-center">
+          <!-- LEFT COLUMN -->
+          <div class="col-12 col-lg-6 d-flex flex-column">
+            <h5 class="py-3 fs-2 fw-light text-start">Our Agency</h5>
+
+            <h1 class="display-1 fw-bold creative text-start">
+              CREATIVE DESIGN
+            </h1>
+
+            <p class="custom-p lh-lg fw-normal mt-3 text-start">
+              Discover innovative strategies for impactful visual communication.
+              We transform ideas into compelling realities, ensuring your brand
+              stands out in a crowded marketplace. Our dedicated team leverages
+              cutting-edge techniques to deliver exceptional results that
+              resonate with your audience.
+            </p>
+
+            <button
+              type="button"
+              class="btn btn-outline-secondary rounded-4 custom-button fw-semibold mt-3 px-4 py-2 align-self-start"
+            >
+              EXPLORE SERVICES <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+          </div>
+          <!-- animaiton  -->
+          <!-- RIGHT COLUMN IMAGE -->
+          <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <img
+              src="images/abstract-1.webp"
+              class="img-fluid hero-image rounded-3"
+              alt="A movingimage"
+            />
+          </div>
+        </div>
       </div>
-      <!-- animation image -->
-      <img
-        src="images/abstract-1.webp"
-        alt="a moving image"
-        class="img-fluid hero-image mx-auto"
-      />
       <!-- stats-card -->
       <div class="stats-card container">
         <h2 class="statscard-head d-flex align-items-center ms-auto">
@@ -135,66 +144,69 @@
     <!-- About Us Section -->
     <section class="about-section">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <h2 class="line-heading text-secondary fw-light">
             About <span></span>
           </h2>
           <p class="fsize-about fw-semibold">LEARN MORE ABOUT US</p>
           <!-- nested images ands texts of about -->
-          <div>
+          <!-- image right on laptop  -->
+          <div class="col-12 col-lg-6">
             <img
               src="images/about-portrait-1.webp"
               alt="it is an image people working"
               class="img-fluid rounded-3 mt-5"
             />
-            <div class="inside-image rounded-3">
-              <span class="fw-bold d-block insideimage fs-2 pt-3"
-                >20&plus;</span
-              >
-              <span class="fw-light d-block insideimage mt-0 pt-0"
-                >YEARS OF EXPERTISE</span
-              >
+          </div>
+          <div class="col-12 col-lg-6 mt-lg-5">
+            <p class="fw-bold text-wrap fs-1 underimg text-start">
+              Elevating Business Performance Through Innovation
+            </p>
+            <p class="underimg fs-5 text-secondary text-wrap text-start">
+              We focus on crafting bespoke strategies that navigate complexity
+              and deliver tangible results for our clients.
+            </p>
+            <p class="underimg text-start">
+              Through a blend of sophisticated analytics and creative
+              problem-solving, we empower organizations to thrive in rapidly
+              evolving markets.
+            </p>
+            <!-- the card starts  -->
+            <div class="d-flex flex-column flex-md-row flex-md-wrap">
+              <div class="feature-item rounded-2 p-4 m-2">
+                <span class="d-block"
+                  ><i
+                    class="bi bi-check feature-item-border rounded-5 h2 my-1"
+                  ></i
+                ></span>
+                <h5 class="my-3">Dedicated Team Support</h5>
+                <p class="feature-text my-3">
+                  Our highly skilled professionals are committed to providing
+                  personalized service and impactful solutions on every
+                  engagement.
+                </p>
+              </div>
+              <div class="rounded-2 feature-item p-4 m-2">
+                <span class="d-block"
+                  ><i
+                    class="bi bi-lightbulb-fill rounded-5 h2 my-1 feature-item-bulb"
+                  ></i
+                ></span>
+                <h5 class="my-3">Forward-Thinking Approach</h5>
+                <p class="feature-text my-3">
+                  We embrace innovative methodologies to develop unique
+                  strategies that drive lasting success.
+                </p>
+              </div>
             </div>
-          </div>
-          <p class="fw-bold text-wrap fs-1 underimg">
-            Elevating Business Performance Through Innovation
-          </p>
-          <p class="underimg fs-5 text-secondary text-wrap">
-            We focus on crafting bespoke strategies that navigate complexity and
-            deliver tangible results for our clients.
-          </p>
-          <p class="underimg">
-            Through a blend of sophisticated analytics and creative
-            problem-solving, we empower organizations to thrive in rapidly
-            evolving markets.
-          </p>
-
-          <div class="feature-item rounded-2 p-4 m-2 col-md-6">
-            <span class="d-block"
-              ><i class="bi bi-check feature-item-border rounded-5 h2 my-1"></i
-            ></span>
-            <h5 class="my-3">Dedicated Team Support</h5>
-            <p class="feature-text my-3">
-              Our highly skilled professionals are committed to providing
-              personalized service and impactful solutions on every engagement.
-            </p>
-          </div>
-          <div class="rounded-2 feature-item p-4 m-2 col-md-6">
-            <span class="d-block"
-              ><i
-                class="bi bi-lightbulb-fill rounded-5 h2 my-1 feature-item-bulb"
-              ></i
-            ></span>
-            <h5 class="my-3">Forward-Thinking Approach</h5>
-            <p class="feature-text my-3">
-              We embrace innovative methodologies to develop unique strategies
-              that drive lasting success.
-            </p>
+            <button
+              type="button"
+              class="btn rounded-5 mt-4 feature-button fw-bold"
+            >
+              Explore Our Services
+            </button>
           </div>
         </div>
-        <button type="button" class="btn rounded-5 mt-4 feature-button fw-bold">
-          Explore Our Services
-        </button>
       </div>
     </section>
     <!-- review section  -->
@@ -1474,7 +1486,7 @@
             placeholder="Write message..."
           ></textarea>
         </div>
-        <div class=" text-center">
+        <div class="text-center">
           <button
             type="button"
             class="btn text-light fw-semibold button-send rounded-3 mt-4"

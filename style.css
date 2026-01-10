@@ -49,6 +49,17 @@ body {
   border-radius: 15px;
   border: 2px solid rgb(52, 56, 58);
 }
+@media (min-width: 1024px) {
+  .stats-card {
+    position: relative;
+    top: -225px;
+    left: 340px;
+    height: 135px;
+    width: 230px;
+    background-color: rgba(27, 38, 44, 0.744);
+    backdrop-filter: blur(7px);
+  }
+}
 .statscard-head {
   padding-left: 0.938rem;
   padding-top: 1.563rem;
@@ -60,11 +71,11 @@ body {
   color: white;
   background-color: rgba(213, 153, 19, 1);
   margin: 0.313rem;
-  padding: 0.25rem;
+  padding: 0.1rem;
 }
 .five {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 /* About Us section styles */
 .line-heading {
@@ -97,16 +108,14 @@ body {
   text-align: center;
   margin-top: 1rem;
 }
-.underimg {
-  position: relative;
-  top: -60px;
-}
+
 /* feature items */
 .feature-item {
   background-color: rgba(27, 38, 44, 1);
-  width: 335px;
-  height: 215px;
+flex: 1 1 200px;
 }
+
+
 .feature-item:hover {
   transform: translateY(-8px);
 }
@@ -445,8 +454,8 @@ body {
   top: -100px;
 }
 /* TABLET & UP */
-@media (min-width: 768px){
-  .form-style{
+@media (min-width: 768px) {
+  .form-style {
     width: 98%;
   }
 }
@@ -476,16 +485,16 @@ body {
   background-color: rgba(213, 153, 19, 1);
 }
 /* tablet or up  */
-@media (min-width:760px){
+@media (min-width: 760px) {
   .line-span {
-  display: inline-block;
-  position: relative;
-  left: 300px;
-  bottom: 15px;
-  width: 70px;
-  height: 3px;
-  background-color: rgba(213, 153, 19, 1);
-}
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    bottom: 15px;
+    width: 70px;
+    height: 3px;
+    background-color: rgba(213, 153, 19, 1);
+  }
 }
 .button-send {
   padding-left: 6rem;
